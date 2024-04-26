@@ -1,0 +1,38 @@
+{
+  "name": "13.7_second",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve:dev": "webpack serve --open --config config/webpack.dev.js",
+    "serve:prod": "webpack serve --open --config config/webpack.prod.js",
+    "json": "json-server data.json",
+    "dev": "webpack --mode development",
+    "test": "echo \"Error: no test specified\" && exit 1"
+    
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@eslint/js": "^9.1.1",
+    "eslint": "^9.1.1",
+    "globals": "^15.0.0",
+    "html-webpack-plugin": "^5.6.0",
+    "webpack": "^5.91.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.4"
+  },
+  "dependencies": {
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
+    "prettier": "^3.2.5"
+  },
+
+  "lint-staged": {
+    "src/**/*.{js,html,css}": "prettier --write",
+    "src/**/*.js": "eslint"
+  }
+
+
+
+}
